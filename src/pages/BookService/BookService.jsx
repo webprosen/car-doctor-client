@@ -13,7 +13,7 @@ const BookService = () => {
         const form = event.target;
         const name = form.name.value;
         const date = form.date.value;
-        const email = user?.email;
+        const email = form.email.value || user?.email;
 
         const order = {
             customerName: name,
